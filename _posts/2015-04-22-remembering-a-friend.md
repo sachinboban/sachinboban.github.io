@@ -13,6 +13,8 @@ academics. It all changed after I met him. In fact my life changed a lot. Fun
 nd academics became hand-in-hand. He gave an altogether different dimension to
 friendship, fun and much more.
 
+![Yadhu](/assests/yadhu.jpg)
+
 He was one of the funniest guy I had ever met. He always carried around a smile
 and a prank up his sleeve. Though I was at the receiving end of a lot of them, I
 enjoyed them all at the same time. I don't remember how exactly I met him. But
