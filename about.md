@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: about
+permalink: /about/
 ---
 
 I am a graduate student at the University of Utah, pursuing Masters (MS) in
