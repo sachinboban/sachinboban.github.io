@@ -3,7 +3,12 @@ layout: page
 title: cv
 ---
 
-I am working on it! Really I am!
+
+[GitHub][github]
+[LinkedIn][linkedin]
+[Twitter][twitter]
+[Instagram][instagram]
+
 
 ## Education
 ---
@@ -88,6 +93,10 @@ JUL 2011 - MAY 2012\\
 Worked towards securing sponsorship deals for the annual technical fest of
 [National Institute of Technology, Calicut][nitc].
 
+[github]: http://github.com/{{ site.github_username }}
+[linkedin]: http://linkedin.com/in/{{ site.linkedin_username }}
+[twitter]: http://twitter.com/{{ site.twitter_username }}
+[instagram]: http://instagram.com/{{ site.instagram_username }}
 [soc-link]: https://www.cs.utah.edu/
 [csed]: http://www.cse.nitc.ac.in/
 [dkopta]: https://dkoptacs.github.io/

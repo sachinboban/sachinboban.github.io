@@ -14,5 +14,12 @@ While Malayalam is my mother tongue, I am well versed in English and Hindi. I
 also speak a little Tamil. In addition to soccer (or football outside the US),
 I also like going for a walk and explore places (and taking pics along).
 
+You can also find me at [GitHub][github], [LinkedIn][linkedin],
+[Twitter][twitter] and [Instagram] [instagram].
+
 [soc-link]: https://www.cs.utah.edu/
 [csed-link]: http://www.cse.nitc.ac.in/
+[github]: http://github.com/{{ site.github_username }}
+[linkedin]: http://linkedin.com/in/{{ site.linkedin_username }}
+[twitter]: http://twitter.com/{{ site.twitter_username }}
+[instagram]: http://instagram.com/{{ site.instagram_username }}
