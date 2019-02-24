@@ -27,8 +27,9 @@ linkedin_username: sachinboban
 # Build Settings
 markdown: kramdown
 theme: minima
-plugines:
+plugins:
   - jekyll-feed
+  - jekyll-gist
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
@@ -49,3 +50,4 @@ plugines:
 #   - vendor/ruby/
 
 permalink: /blog/:year/:month/:day/:title
+#port: 4001
