@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Buffer Overflow"
+code: code/overflow.c
 ---
 
 We all have heard this term over and over again. But most of us might have
@@ -69,7 +70,9 @@ _poorly written_ `C` program.
 Before we begin, let us have look at the _poorly written `C` program_ that we
 are going to use.
 
-<script src="http://gist-it.appspot.com/github/sachinboban/buffer-overflow-demo/blob/master/overflow.c"></script>
+{% highlight C %}
+	{% include {{ page.code }} %}
+{% endhighlight %}
 
 `main()` blindly calls the `serial_mult()` function and prints the value
 returned by `serial_mult()`. `serial_mult()` asks the user for the number of

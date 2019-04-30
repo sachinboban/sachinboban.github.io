@@ -50,4 +50,4 @@ plugins:
 #   - vendor/ruby/
 
 permalink: /blog/:year/:month/:day/:title
-#port: 4001
+port: 4001
