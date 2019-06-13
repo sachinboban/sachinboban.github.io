@@ -1,26 +1,15 @@
 ---
 layout: page
+title: About
+---
 ---
 
-<div style="width: 100%; display: inline-block;">
-    <img src="{{ site.baseurl }}/images/sachin_boban.jpg" alt="Headshot" width="25%" style="float: left;"/>
-    <div style="float: left; padding-left: 20px;">
-    <span style="font-size: 150%;"> Sachin Boban</span><br>
-    Graduate Student<br>
-    University of Utah<br>
-    <a href="mailto:sachinbobank@gmail.com">sachinbobank@gmail.com</a><br>
-    <a href="{{ site.baseurl }}/cv/sachinboban.pdf">Resume</a>
-    </div>
-</div>
-<br>
-[Resume][resume-link] -
-[Projects](#projects) -
-[Activities](#activities)
+## Hello! I am Sachin Boban!👋
 
 I am a graduate student at the University of Utah, pursuing Masters (MS) in
-Computer Science at the [School of Computing][soc-link], University of Utah. I
-graduated with a Bachelor of Technology in Computer Science from
-[Department of Computer Science and Engineering] [csed-link], National Institute
+Computer Science at the [School of Computing][soc-link]. I graduated with a
+Bachelor of Technology in Computer Science from
+[Department of Computer Science and Engineering][csed-link], National Institute
 of Technology, Calicut (NITC). My interests include Operating Systems, Embedded
 Systems etc. Very recently I have started taking interest in Distributed Systems
 and Database Systems.
@@ -38,8 +27,14 @@ I am actively looking for a job. You can find my [resume][resume-link] here.
 ## Projects
 * [Buggy][buggy-git] - Arduino based gesture controlled robot, that is
   controlled over RF.
+* DRAM Performance Evaluation - A study undertaken towards understanding various
+  factors affecting DRAM performance and theie effects using
+  [DRAMSim2][dramsim2].
 * [Malware Classification][mal-git] - Classification and detection of malware
   using Kernel Object Behavioral Graph CLustering.
+* [Virtual Machine Security][vms-report] - A study on existing issues assocaited
+  with rollbacking mechanism in Virtual Machines and exploration of possible
+  solutions.
 
 ## Activities
 * Student Coordinator at _PRISM_, a Kerala government project to raise
@@ -48,14 +43,22 @@ I am actively looking for a job. You can find my [resume][resume-link] here.
   National Institute of Technology, Calicut (NITC)
   Institute of Technology, Calicut (NITC)
 * Marketing Manager, _[Tathva'10][tathva-link]_, the annual technical fest of
-  National Institute of Technology, Calicut
+  National Institute of Technology, Calicut.
+
+### Others
+I watch a lot of football (soccer), and I am a huge fan of
+[Chelsea F.C.][chelsea]. I also follow [Kerala Blasters FC][kbfc].
 
 [soc-link]: https://www.cs.utah.edu/
 [csed-link]: http://www.cse.nitc.ac.in/
-[resume-link]: /cv/sachinboban.pdf
-[insta-link]: http://instagram.com/{{ site.instagram_username }}
-[twitter-link]: http://twitter.com/{{ site.twitter_username }}
+[resume-link]: /{{ site.resume-url }}
+[insta-link]: http://instagram.com/{{ site.instagram }}
+[twitter-link]: http://twitter.com/{{ site.twitter }}
 [buggy-git]: https://github.com/sachinboban/buggy
+[dramsim2]: https://user.eng.umd.edu/~blj/dramsim/
 [mal-git]: https://github.com/rahulp0491/Malware-Classifier
+[vms-report]: /assets/files/vms.pdf
 [cm-nitc]: https://www.facebook.com/clubmathematica/
 [tathva-link]: https://tathva.org
+[chelsea]: https://www.chelseafc.com/
+[kbfc]: http://keralablastersfc.in/

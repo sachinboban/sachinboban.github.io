@@ -1,8 +1,20 @@
 ---
-layout: post
 title: "Buffer Overflow"
+layout: post
+date: 2019-04-06 22:10
+image:
+headerImage: false
 code: code/overflow.c
+tag:
+- C
+- x86-64
+- stack
+- security
+category: blog
+author: sachinboban
+description: "A simple demonstration of sime buffer overflow attack."
 ---
+
 
 We all have heard this term over and over again. But most of us might have
 never tried (or even understood) how exaclty a buffer overflow can be used to
@@ -71,7 +83,7 @@ Before we begin, let us have look at the _poorly written `C` program_ that we
 are going to use.
 
 {% highlight C %}
-	{% include {{ page.code }} %}
+    {% include {{ page.code }} %}
 {% endhighlight %}
 
 `main()` blindly calls the `serial_mult()` function and prints the value

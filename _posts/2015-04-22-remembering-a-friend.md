@@ -1,19 +1,26 @@
 ---
 layout: post
 title: "Remembering a Friend"
-date: 2015-04-22
+date: 2015-04-22 22:10
+image: /assets/images/yadhu.jpg
+headerImage: false
+tag:
+- personal
+category: blog
+author: sachinboban
+description: "In memory of the best friend"
 ---
 
-> A special mention to my BTech senior Govind Haridas and my best friend
-Ramakrishna Menon for all the help in completing this write up.
+_A special mention to my BTech senior Govind Haridas and my best friend
+Ramakrishna Menon for all the help in completing this write up._
 
 I met Yadhu a few months into my first year at college.  During my initial
 college days, the fun element was minimal. College life was centered around
-academics. It all changed after I met him. In fact my life changed a lot. Fun 
+academics. It all changed after I met him. In fact my life changed a lot. Fun
 nd academics became hand-in-hand. He gave an altogether different dimension to
 friendship, fun and much more.
 
-![Yadhu](/assests/yadhu.jpg)
+![Yadhu]({{ page.image }})
 
 He was one of the funniest guy I had ever met. He always carried around a smile
 and a prank up his sleeve. Though I was at the receiving end of a lot of them, I
