@@ -1,15 +1,28 @@
 ---
-layout: post
 title: "Buffer Overflow"
+layout: post
+date: 2019-04-06 22:10
+image:
+headerImage: false
 code: code/overflow.c
+tag:
+- C
+- x86-64
+- stack
+- security
+category: blog
+author: sachinboban
+description: "A simple demonstration of sime buffer overflow attack."
 ---
+
 
 We all have heard this term over and over again. But most of us might have
 never tried (or even understood) how exaclty a buffer overflow can be used to
 run a completely different (and often malicious) code. Before we jump to
 performing such an attack, let us spend some time to understand some basics.
-> In this post, are looking at performing a buffer overflow attack on a Linux OS
-  running on a x86_64 machine (following the official System V AMD64 ABI).
+> In this post, we are looking at performing a buffer overflow attack on a
+  Linux OS running on a x86_64 machine (following the official System V AMD64
+  ABI).
 
 > Before we begin, this article assumes that you are familiar with stack,
   stack frame and function calls conventions on an x86-64 machine. If not I
@@ -71,7 +84,7 @@ Before we begin, let us have look at the _poorly written `C` program_ that we
 are going to use.
 
 {% highlight C %}
-	{% include {{ page.code }} %}
+    {% include {{ page.code }} %}
 {% endhighlight %}
 
 `main()` blindly calls the `serial_mult()` function and prints the value
