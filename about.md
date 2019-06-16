@@ -49,6 +49,10 @@ I am actively looking for a job. You can find my [resume][resume-link] here.
 I watch a lot of football (soccer), and I am a huge fan of
 [Chelsea F.C.][chelsea]. I also follow [Kerala Blasters FC][kbfc].
 
+## Credits
+The profile picture is a caricature of myself, drawn by cartoonist
+[Ibrahim Badusha][fb-badusha] back in 2013. Here is the [orginal][cartoon].
+
 [soc-link]: https://www.cs.utah.edu/
 [csed-link]: http://www.cse.nitc.ac.in/
 [resume-link]: /{{ site.resume-url }}
@@ -62,3 +66,5 @@ I watch a lot of football (soccer), and I am a huge fan of
 [tathva-link]: https://tathva.org
 [chelsea]: https://www.chelseafc.com/
 [kbfc]: http://keralablastersfc.in/
+[fb-badusha]: https://www.facebook.com/ibrahimbadusha.badusha.3
+[cartoon]: {{ site.base-url }}/assets/images/cartoon.jpg
