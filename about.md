@@ -2,6 +2,7 @@
 layout: page
 title: About
 ---
+
 ---
 
 ## Hello! I am Sachin Boban!👋
@@ -25,39 +26,52 @@ You can reach me over [email](mailto:sachinbobank@gmail.com) or
 I am actively looking for a job. You can find my [resume][resume-link] here.
 
 ## Projects
-* [Buggy][buggy-git] - Arduino based gesture controlled robot, that is
+
+- [Timer App][timer-git] - A simple web based count-down timer built using
+  [React][reactjs] library.
+- [FIFA20 Dashboard][fifa-git] - A [dashboard tool][fifa-site] to visualize and
+  compare the skills of soccer players based on the data from the game FIFA 20.
+- [Buggy][buggy-git] - Arduino based gesture controlled robot, that is
   controlled over RF.
-* DRAM Performance Evaluation - A study undertaken towards understanding various
+- DRAM Performance Evaluation - A study undertaken towards understanding various
   factors affecting DRAM performance and theie effects using
   [DRAMSim2][dramsim2].
-* [Malware Classification][mal-git] - Classification and detection of malware
+- [Malware Classification][mal-git] - Classification and detection of malware
   using Kernel Object Behavioral Graph CLustering.
-* [Virtual Machine Security][vms-report] - A study on existing issues assocaited
+- [Virtual Machine Security][vms-report] - A study on existing issues assocaited
   with rollbacking mechanism in Virtual Machines and exploration of possible
   solutions.
 
 ## Activities
-* Student Coordinator at _PRISM_, a Kerala government project to raise
+
+- Student Coordinator at _PRISM_, a Kerala government project to raise
   government schools to international standards.
-* Assistant Secretary at _[Club Mathematica][cm-nitc]_,  A Tier one club at
+- Assistant Secretary at _[Club Mathematica][cm-nitc]_, A Tier one club at
   National Institute of Technology, Calicut (NITC)
   Institute of Technology, Calicut (NITC)
-* Marketing Manager, _[Tathva'10][tathva-link]_, the annual technical fest of
+- Marketing Manager, _[Tathva'10][tathva-link]_, the annual technical fest of
   National Institute of Technology, Calicut.
 
 ### Others
+
 I watch a lot of football (soccer), and I am a huge fan of
 [Chelsea F.C.][chelsea]. I also follow [Kerala Blasters FC][kbfc].
 
 ## Credits
+
 The profile picture is a caricature of myself, drawn by cartoonist
 [Ibrahim Badusha][fb-badusha] back in 2013. Here is the [orginal][cartoon].
 
 [soc-link]: https://www.cs.utah.edu/
 [csed-link]: http://www.cse.nitc.ac.in/
+
 [resume-link]: /{{ site.resume-url }}
 [insta-link]: http://instagram.com/{{ site.instagram }}
 [twitter-link]: http://twitter.com/{{ site.twitter }}
+[timer-git]: https://github.com/sachinboban/timer-app
+[reactjs]: https://reactjs.org/
+[fifa-git]: https://github.com/sachinboban/datavis-fifa20-dashboard
+[fifa-site]: https://laknaren16.github.io/fifa20-dashboard/index.html
 [buggy-git]: https://github.com/sachinboban/buggy
 [dramsim2]: https://user.eng.umd.edu/~blj/dramsim/
 [mal-git]: https://github.com/rahulp0491/Malware-Classifier
