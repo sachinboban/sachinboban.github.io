@@ -12,8 +12,8 @@ Computer Science at the [School of Computing][soc-link]. I graduated with a
 Bachelor of Technology in Computer Science from
 [Department of Computer Science and Engineering][csed-link], National Institute
 of Technology, Calicut (NITC). My interests include Operating Systems, Embedded
-Systems etc. Very recently I have started taking interest in Distributed Systems
-and Database Systems.
+Systems etc. Very recently I have started taking interest in Distributed Systems,
+Database Systems, JavaScript and [React][reactjs].
 
 While Malayalam is my mother tongue, I am well versed in English and Hindi. I
 also speak a little Tamil. In addition to soccer (or football outside the US),
