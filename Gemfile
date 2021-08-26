@@ -1,5 +1,4 @@
-source 'http://rubygems.org'
+source "https://rubygems.org"
+gemspec
 
-gem 'github-pages'
-gem 'html-proofer'
-gem 'jekyll-admin'
+gem "webrick"

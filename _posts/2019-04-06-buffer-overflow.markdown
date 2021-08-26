@@ -1,33 +1,32 @@
 ---
 title: "Buffer Overflow"
-layout: post
-date: 2019-04-06 22:10
-image:
-headerImage: false
+toc: true
+toc_sticky: true
 code: code/overflow.c
-tag:
-- C
-- x86-64
-- stack
-- security
-category: blog
-author: sachinboban
-description: "A simple demonstration of sime buffer overflow attack."
----
 
+tags:
+ - c
+ - x86-64
+ - stack
+ - security
+ - overflow
+---
 
 We all have heard this term over and over again. But most of us might have
 never tried (or even understood) how exaclty a buffer overflow can be used to
 run a completely different (and often malicious) code. Before we jump to
 performing such an attack, let us spend some time to understand some basics.
-> In this post, we are looking at performing a buffer overflow attack on a
-  Linux OS running on a x86_64 machine (following the official System V AMD64
-  ABI).
 
-> Before we begin, this article assumes that you are familiar with stack,
-  stack frame and function calls conventions on an x86-64 machine. If not I
-  recommend taking a look at
-  [Stack frame layout on x86-64][stk-eli] by Eli Bendersky.
+In this post, we are looking at performing a buffer overflow attack on a
+Linux OS running on a x86_64 machine (following the official System V AMD64
+ABI).
+{: .notice}
+
+Before we begin, this article assumes that you are familiar with stack,
+stack frame and function calls conventions on an x86-64 machine. If not I
+recommend taking a look at
+[Stack frame layout on x86-64][stk-eli] by Eli Bendersky.
+{: .notice--info}
 
 # What is a buffer Overflow?
 [Wikipedia][wiki] defines Buffer overflow as follows:
@@ -42,8 +41,10 @@ very `strcpy` function (`char *strcpy(char *dest, const char *src)`) defined in
 `string.h` does not check whether all the bytes in source would fit into the
 destination. If `src` is bigger than `dest` then the extra bytes in the `src`
 will result in an overflow of `dest`.
-> It is often advised to use `strncpy()` instead of `strcpy()` as the later is
-  considered unsafe due to chances of an overflow.
+
+It is often advised to use `strncpy()` instead of `strcpy()` as the
+later is considered unsafe due to chances of an overflow.
+{: .notice--danger}
 
 # Ok. So what if a buffer overflows?
 When a buffer overflows, the extra byte(s) that do not fit into the buffer
@@ -243,9 +244,10 @@ Upon hitting the break point, we can print the value of the stack register
 ```
 (gdb) print/x $rsp
 ```
-> You may also look into the location pointed to by `%rsp` to get the return
-  address using `print/x *<location>`, where `<location>` is the value of the
-  stack pointer.
+You may also look into the location pointed to by `%rsp` to get the return
+address using `print/x *<location>`, where `<location>` is the value of the
+stack pointer.
+{: .notice--info}
 
 Now that we have got the location of the return address in the stack frame of
 `serial_mult()`, the next step would be get the base address of `a[]`. This is
@@ -275,9 +277,11 @@ address `0x0` and shall crash.
 
 Now what if instead of inputing `0`, we give a valid address as the 8th number?
 For example the address of the function `not_used()`?
-> You can again use `disassem not_used` within gdb to get the address of our
-  `not_used` function. Remember to convert the address to a decimal value
-  before feeding it as the 8th number to the program.
+
+You can again use `disassem not_used` within gdb to get the address of our
+`not_used` function. Remember to convert the address to a decimal value
+before feeding it as the 8th number to the program.
+{: .notice--info}
 
 Upon successfully overwritting the return address with the address of `not_used`
 function, you can see the print within the `not_used` function even though the
@@ -285,9 +289,10 @@ function was never called anywhere in our program.
 ```sh
 I am never here!
 ```
-> Since  `not_used()` exits using the `exit()` function instead of returning
-  back to its caller, we would never see the part of `main()` after the call to
-  `serial_mult()` getting exectuted.
+Since  `not_used()` exits using the `exit()` function instead of returning
+back to its caller, we would never see the part of `main()` after the call to
+`serial_mult()` getting exectuted.
+{: .notice--info}
 
 # Summarizing
 There are some limitations to the attack we did: we can only execute an existing
