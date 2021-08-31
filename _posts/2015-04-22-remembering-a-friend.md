@@ -7,6 +7,8 @@ header:
   overlay_color: "#333"
 read_time: false
 
+share: false
+
 categories:
   - Personal
 

@@ -3,6 +3,7 @@ title: "Buffer Overflow"
 toc: true
 toc_sticky: true
 code: code/overflow.c
+share: false
 
 tags:
  - c

@@ -80,7 +80,7 @@ My profile picture is a photo taken by my good friend.
 [buggy-git]: https://github.com/sachinboban/buggy
 [dramsim2]: https://user.eng.umd.edu/~blj/dramsim/
 [mal-git]: https://github.com/rahulp0491/Malware-Classifier
-[vms-report]: /assets/files/vms.pdf
+[vms-report]: /assets/vms.pdf
 [cm-nitc]: https://www.facebook.com/clubmathematica/
 [tathva-link]: https://tathva.org
 [chelsea]: https://www.chelseafc.com/
