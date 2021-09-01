@@ -1,16 +1,23 @@
 ---
 title: "Buffer Overflow"
-toc: true
-toc_sticky: true
+excerpt: A simple buffer overflow attack
 code: code/overflow.c
-share: false
-
+categories:
+  - Linux
 tags:
  - c
  - x86-64
  - stack
  - security
  - overflow
+ - gdb
+ - debug
+ - asm
+
+show_date: true
+toc: true
+toc_sticky: true
+share: false
 ---
 
 We all have heard this term over and over again. But most of us might have
@@ -29,7 +36,7 @@ recommend taking a look at
 [Stack frame layout on x86-64][stk-eli] by Eli Bendersky.
 {: .notice--info}
 
-# What is a buffer Overflow?
+## What is a buffer Overflow?
 [Wikipedia][wiki] defines Buffer overflow as follows:
 > ... buffer overflow, or buffer overrun, is an anomaly where a program, while
   writing data to a buffer, overruns the buffer's boundary and overwrites
@@ -47,7 +54,7 @@ It is often advised to use `strncpy()` instead of `strcpy()` as the
 later is considered unsafe due to chances of an overflow.
 {: .notice--danger}
 
-# Ok. So what if a buffer overflows?
+### Ok. So what if a buffer overflows?
 When a buffer overflows, the extra byte(s) that do not fit into the buffer
 spills over to the adjacent memory locations. Depending on where the
 buffer is actually placed, the buffer overflow can spill into memory locations
@@ -62,7 +69,7 @@ location (and hence execute any code we want).
 
 Now that we have set the background, lets get cracking!
 
-# Memory Layout
+## Memory Layout
 Programs make use of different regions of memory such as stack, heap, code etc.
 As you would already know by now, stack is where the variables and frames are
 stored. The actual location of these memory regions depends the system. They
@@ -75,7 +82,7 @@ So the very first entry in the stack frame of the called function (callee),
 would be this return address. In addition, you may also recall that stack is
 also used to store some varibles.
 
-# Manipulating the stack
+## Manipulating the stack
 As mentioned before the stack is used for storing varibles and also
 (temporarily) store address of certain instructions as well. The very fact that
 these two pieces sometimes are dangerously close to each other in a stack frame
@@ -85,7 +92,7 @@ _poorly written_ `C` program.
 Before we begin, let us have look at the _poorly written `C` program_ that we
 are going to use.
 
-{% highlight C %}
+{% highlight C linenos %}
     {% include {{ page.code }} %}
 {% endhighlight %}
 
@@ -163,7 +170,7 @@ Enter array the array
 Aborted (core dumped)
 ```
 
-# An example
+### An example
 First we try to find the location of the return address on the stack. Then we
 use the error prone array access to overwrite the return address and try to
 return from `serial_mult()` to an address where the program should't be.
@@ -196,7 +203,7 @@ looks something like this:
 If this is case, by writting 8 numbers, we can easily overwrite the return
 address, with the last number essentially being the new return address.
 
-# Let the attack begin!
+## Let the attack begin!
 The stack we saw is just an example explaining our approach. To find the actual
 location of `a[]` and the return address in out `overflow.c` program we make
 use of `gdb`.
@@ -295,7 +302,7 @@ back to its caller, we would never see the part of `main()` after the call to
 `serial_mult()` getting exectuted.
 {: .notice--info}
 
-# Summarizing
+## Summarizing
 There are some limitations to the attack we did: we can only execute an existing
 function. But by being even more clever, we can feed even more numbers,
 overwriting beyond the return address, into `main()` function's stack frame.
@@ -305,7 +312,7 @@ instructions into data using `scanf()`, set the return address to those
 _injected_ instructions? If so, we are essentially executing the _injected code_
 within the program.
 
-# References
+## References
 1. [Wikipedia page on bufffer overflow][wiki]
 2. [Stack frame layout on x86-64][stk-eli]
 
